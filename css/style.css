@@ -1,0 +1,88 @@
+/* CSS Variables */
+:root {
+  --header-primary-color: #f7f7f7;
+  --header-secondary-color: #015582;
+  --header-secondary-light-color: #3494c8;
+}
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.kundeservice {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--header-secondary-color);
+  padding: 40px 10px;
+  justify-content: space-between;
+}
+
+.kundeservice a,
+p {
+  color: white;
+  font-size: 12px;
+}
+
+#kundeservice-left {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  width: 172px;
+  height: 32px;
+}
+
+.user-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 12px;
+  background-color: var(--header-primary-color);
+}
+
+.search-header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  font-size: 12px;
+  background-color: var(--header-secondary-light-color);
+  gap: 50px;
+}
+
+#menu-icon {
+  display: flex;
+  gap: 10px;
+}
+
+#search-bar {
+  padding: 937px 48px;
+}
+
+.nav-header ul,
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--header-primary-color);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#hero-image {
+  padding: 1440px, auto;
+}
