@@ -3,6 +3,12 @@
   --header-primary-color: #f7f7f7;
   --header-secondary-color: #015582;
   --header-secondary-light-color: #3494c8;
+  --primary-text-color: #000;
+  --secondary-text-color: #fff;
+  --tertiary-text-color: #767676;
+  --button-color: #007ab3;
+  --small-text: 12px;
+  --medium-text: 16px;
 }
 
 /* CSS Reset */
@@ -15,25 +21,25 @@
 body,
 p {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: black;
+  color: var(--primary-text-color);
 }
 
 a {
   text-decoration: none;
 }
 
+/* Kundeservice Header */
 .kundeservice {
   display: flex;
   flex-direction: row;
   background-color: var(--header-secondary-color);
-  padding: 40px 10px;
+  padding: 20px 80px;
   justify-content: space-between;
 }
 
-.kundeservice a,
-p {
-  color: white;
-  font-size: 12px;
+.kundeservice a {
+  color: var(--secondary-text-color);
+  font-size: var(--small-text);
 }
 
 #kundeservice-left {
@@ -41,24 +47,33 @@ p {
   gap: 20px;
 }
 
+/* User Header and Login */
+.user-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--small-text);
+  background-color: var(--header-primary-color);
+  padding: 30px 80px;
+}
+
 .logo {
   width: 172px;
   height: 32px;
 }
 
-.user-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 12px;
-  background-color: var(--header-primary-color);
+.log-on {
+  gap: 50px;
+  padding: 20px;
 }
 
+/* Search Bar Header */
 .search-header {
   display: flex;
   flex-direction: row;
-  padding: 10px 20px;
-  font-size: 12px;
+  padding: 30px 80px;
+  font-size: var(--small-text);
   background-color: var(--header-secondary-light-color);
   gap: 50px;
 }
@@ -66,23 +81,110 @@ p {
 #menu-icon {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
-#search-bar {
-  padding: 937px 48px;
+#search {
+  padding: 10px 50px 10px 5px;
+  border: none;
+  border-radius: 4px;
 }
 
-.nav-header ul,
-li {
+/* Navigation Header */
+.nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: var(--header-primary-color);
-  text-decoration: none;
-  font-size: 16px;
-  padding: 10px;
+  font-size: var(--medium-text);
+  padding: 40px 30px;
+}
+
+.nav-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main Hero Section */
+.main-hero {
+  display: flex;
+  justify-content: center;
 }
 
 #hero-image {
-  padding: 1440px, auto;
+  width: 90%;
+  height: 600px;
+}
+
+/* Item Cards */
+#hero-card-title {
+  display: flex;
+  padding-left: 25%;
+  margin: 20px;
+}
+
+.hero-cards {
+  display: flex;
+  justify-content: center;
+  font-size: var(--small-text);
+  gap: 50px;
+}
+
+.swatch-box {
+  display: flex;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.swatches {
+  width: 40px;
+  height: 25px;
+}
+
+.item-desc {
+  padding: 10px 0px;
+}
+
+.item-desc p {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--small-text);
+  color: var(--tertiary-text-color);
+}
+
+.price-button {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+#price-tag {
+  color: #ca0000;
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--button-color);
+  width: 170px;
+  height: 30px;
+  padding: 20 20;
+  border: none;
+  border-radius: 8px;
+}
+
+button p {
+  display: flex;
+  color: var(--header-primary-color);
+  font-size: var(--small-text);
+  align-items: center;
+  justify-content: center;
 }
